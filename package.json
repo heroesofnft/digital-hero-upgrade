@@ -1,0 +1,37 @@
+{
+  "name": "digital-hero-upgrade",
+  "version": "1.0.0",
+  "description": "Digital Hero Upgrade Contracts",
+  "keywords": [
+    "solidity",
+    "hon",
+    "nft"
+  ],
+  "repository": "https://github.com/heroesofnft/digital-hero-upgrade",
+  "author": "Heroes of Nft",
+  "license": "GPL-3.0",
+  "scripts": {
+    "build": "npx hardhat compile",
+    "console": "npx hardhat console",
+    "test": "npx hardhat test --verbose",
+    "avash:deploy": "npx hardhat --network avash deploy --export exports/avash/exports.json",
+    "fuji:deploy": "npx hardhat --network fuji deploy --export exports/fuji/exports.json",
+    "fuji:export": "npx hardhat --network fuji export --export exports/fuji/exports.json",
+    "avalanche:deploy": "npx hardhat --network avalanche deploy --export exports/avalanche/exports.json",
+    "avalanche:export": "npx hardhat --network avalanche export --export exports/avalanche/exports.json",
+    "hero-testnet:deploy": "npx hardhat --network herotestnet deploy --export exports/hero-testnet/exports.json"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.8.1",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.2",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.12.6",
+    "hardhat-deploy": "^0.11.22",
+    "hardhat-deploy-ethers": "^0.3.0-beta.13",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  }
+}
