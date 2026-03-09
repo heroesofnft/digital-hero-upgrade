@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 contract DigitalHeroNFT is ERC721, Ownable {
     IERC20 public immutable honToken;
     uint256 public mintPrice;
-    uint256 public nextTokenId = 16874;
+    uint256 public nextTokenId = 100000;
 
     event HeroMinted(address indexed to, uint256 indexed tokenId);
 
